@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Satori - 3D Remote Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+    	html, body{margin: 0; font-family: arial; overflow:hidden;}
+    	#debug{
+    		color: #666;
+    		position: absolute;
+    		top: 0;
+    		right: 0;
+    		z-index: 100;
+            padding: 5px;
+            text-align: right;
+    	}
+    	.connecting{
+    		font-size: 25px;
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		transform: translate(-50%, -50%);
+    		padding: 10px 20px;
+    		background-color: #ddd;
+    	}
+    </style>
+</head>
+<body>
+    <div id="debug"></div>
+
+    <div class="connecting">Connecting...</div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://satori-a.akamaihd.net/satori-sdk-js/v1.0.1/sdk.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
