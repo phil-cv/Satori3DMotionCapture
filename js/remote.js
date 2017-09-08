@@ -11,6 +11,7 @@ if (!window.DeviceOrientationEvent){
 }else{
     //Set up the Satori RTM client and detect connection state
     var client = new RTM(endpoint, appkey);
+    //$(".oriented, .connected").hide();
     client.on("enter-connected", function () {
         $(".connected").show();
         $(".connecting").hide();
